@@ -150,10 +150,7 @@
   transition: background 0.2s, color 0.2s;
   }
 
-  .btn-retour:hover {
-  background: var(--rouge);
-  color: var(--blanc);
-  }
+  .btn-retour:hover {background: var(--rouge);color: var(--blanc)}
 
 /* SPONSORS */
 .sponsors-intro {font-size: 1.1rem;color: #444;line-height: 1.7;max-width: 700px;margin-bottom: 3rem}
@@ -161,7 +158,7 @@
 /* Grille plus compacte */
 .sponsors-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 2rem}
 
-/* Carte sponsor (plus compacte) */
+/* Carte sponsor*/
 .sponsor-card {
   background: var(--blanc);
   border: 1px solid var(--gris);
@@ -407,7 +404,7 @@
     <div class="section-line"></div>
     <div class="evenements-list">
 
-      <div class="evenement-card" onclick="showPage('page-fluo-night')" style="cursor: pointer;">
+      <div class="evenement-card" onclick="showPage('fluo-night')" style="cursor: pointer;">
         <div class="evenement-date">
           <span class="jour">3</span>
           <span class="mois">Juillet</span>
@@ -420,6 +417,7 @@
         </div>
       </div>
 
+      <div class="evenement-card" onclick="showPage('apéro-festif')" style="cursor: pointer;">
       <div class="evenement-card">
         <div class="evenement-date">
           <span class="jour">4</span>
@@ -466,7 +464,7 @@
           <span class="mois">Octobre</span>
         </div>
         <div class="evenement-content">
-          <h3>Soirée inter-jeunesse</h3>
+          <h3>Soirée inter-jeunesse 🍻</h3>
           <div class="lieu">📍 Salle de l'alliance</div>
           <p>Chauffe ta jeunesse et vient prendre un verre chez nous, on est sympa !</p>
           <span class="badge-evenement">Soirée</span><span class="badge-evenement">Interjeunesse</span>
@@ -479,7 +477,7 @@
           <span class="mois">Octobre</span>
         </div>
         <div class="evenement-content">
-          <h3>Soirée Années 80/2000</h3>
+          <h3>Soirée Années 80/2000 💃🏻</h3>
           <div class="lieu">📍 Salle de l'Alliance</div>
           <p>Viens te déhanchez sur le dancefloor en prenant un peu de nostalgie dans les oreilles (et ton meilleur déguisement aussi)</p>
           <span class="badge-evenement">Soirée</span><span class="badge-evenement">80-200</span>
@@ -511,11 +509,21 @@
     <p>3 Juillet — Chapiteau salle de l'Alliance</p>
   </div>
   <div class="section">
-    <button onclick="showPage('page-evenements')" class="btn-retour">← Retour aux événements</button>
+    <button onclick="showPage('evenements')" class="btn-retour">← Retour aux événements</button>
     <p>Contenu personnalisé pour la Fluo Night...</p>
   </div>
 </div>
 
+<div class="page" id="page-fluo-night">
+  <div class="hero" style="padding: 3rem 2rem;">
+    <h1>Apéro festif 🍻</h1>
+    <p>4 Juillet — Chapiteau salle de l'Alliance</p>
+  </div>
+  <div class="section">
+    <button onclick="showPage('evenements')" class="btn-retour">← Retour aux événements</button>
+    <p>Contenu personnalisé pour l'apéro festif...</p>
+  </div>
+</div>
 
 <!-- PAGE SPONSORS -->
 <div class="page" id="page-sponsors">
