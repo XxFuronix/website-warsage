@@ -136,6 +136,25 @@
     border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px;
   }
 
+  .btn-retour {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background: none;
+  border: 2px solid var(--rouge);
+  color: var(--rouge);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+  }
+
+  .btn-retour:hover {
+  background: var(--rouge);
+  color: var(--blanc);
+  }
+
 /* SPONSORS */
 .sponsors-intro {font-size: 1.1rem;color: #444;line-height: 1.7;max-width: 700px;margin-bottom: 3rem}
 
@@ -156,7 +175,7 @@
 
 .sponsor-card:hover {transform: translateY(-3px);box-shadow: 0 6px 20px rgba(0,0,0,0.08)}
 
-/* Logo rond (optionnel si tu le gardes) */
+/* Logo rond */
 .sponsor-logo {
   width: 80px;
   height: 80px;
@@ -388,7 +407,7 @@
     <div class="section-line"></div>
     <div class="evenements-list">
 
-      <div class="evenement-card">
+      <div class="evenement-card" onclick="showPage('page-fluo-night')" style="cursor: pointer;">
         <div class="evenement-date">
           <span class="jour">3</span>
           <span class="mois">Juillet</span>
@@ -443,46 +462,60 @@
 
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="jour">06</span>
-          <span class="mois">Sep</span>
+          <span class="jour">2</span>
+          <span class="mois">Octobre</span>
         </div>
         <div class="evenement-content">
-          <h3>Week-end camping</h3>
-          <div class="lieu">📍 À définir</div>
-          <p>Un week-end de folie entre membres de la jeunesse. Camping, soirées, activités et souvenirs inoubliables !</p>
-          <span class="badge-evenement">Voyage</span>
+          <h3>Soirée inter-jeunesse</h3>
+          <div class="lieu">📍 Salle de l'alliance</div>
+          <p>Chauffe ta jeunesse et vient prendre un verre chez nous, on est sympa !</p>
+          <span class="badge-evenement">Soirée</span><span class="badge-evenement">Interjeunesse</span>
         </div>
       </div>
 
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="jour">25</span>
-          <span class="mois">Oct</span>
+          <span class="jour">3</span>
+          <span class="mois">Octobre</span>
         </div>
         <div class="evenement-content">
-          <h3>Soirée Halloween</h3>
-          <div class="lieu">📍 Salle des fêtes de Warsage</div>
-          <p>Déguisements obligatoires pour cette soirée qui s'annonce effrayante... de fun ! Concours de costumes et ambiance festive.</p>
-          <span class="badge-evenement">Soirée</span>
+          <h3>Soirée Années 80/2000</h3>
+          <div class="lieu">📍 Salle de l'Alliance</div>
+          <p>Viens te déhanchez sur le dancefloor en prenant un peu de nostalgie dans les oreilles (et ton meilleur déguisement aussi)</p>
+          <span class="badge-evenement">Soirée</span><span class="badge-evenement">80-200</span>
         </div>
       </div>
 
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="jour">06</span>
-          <span class="mois">Déc</span>
+          <span class="jour">4</span>
+          <span class="mois">Octobre</span>
         </div>
         <div class="evenement-content">
-          <h3>Saint-Nicolas — Animation enfants</h3>
-          <div class="lieu">📍 Village de Warsage</div>
-          <p>Li Djônèsse s'investit pour faire vivre la magie de Saint-Nicolas aux enfants du village. Une belle tradition wallonne !</p>
-          <span class="badge-evenement">Tradition</span>
+          <h3>Pétanque et animation enfants</h3>
+          <div class="lieu">📍 Salle de l'alliance</div>
+          <p>Viens tester nos belles pistes en sable et tenter de gagner de super prix ! Des animations sont prévus pour petit et grand pour éviter l'ennui en attendant </p>
+          <span class="badge-evenement">Pétanque</span><span class="badge-evenement">Bbq</span><span class="badge-evenement">Animation</span>
         </div>
       </div>
 
     </div>
   </div>
 </div>
+
+<!--SOUS PAGE AGENDA -->
+
+<div class="page" id="page-fluo-night">
+  <div class="hero" style="padding: 3rem 2rem;">
+    <h1>Fluo Night x.0 💃🏻</h1>
+    <p>3 Juillet — Chapiteau salle de l'Alliance</p>
+  </div>
+  <div class="section">
+    <button onclick="showPage('page-evenements')" class="btn-retour">← Retour aux événements</button>
+    <p>Contenu personnalisé pour la Fluo Night...</p>
+  </div>
+</div>
+
 
 <!-- PAGE SPONSORS -->
 <div class="page" id="page-sponsors">
